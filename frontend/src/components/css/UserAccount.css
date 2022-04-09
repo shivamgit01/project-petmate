@@ -1,0 +1,37 @@
+.container2 {
+  display: flex;
+  margin: 12vw 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+h1 {
+  margin: 1vw 0;
+}
+.userProfile {
+  border-radius: 100%; /*1*/
+  margin: 0.5rem 2.6rem;
+  border: 10px solid transparent; /*2*/
+  width: 160px;
+  background: linear-gradient(45deg, rgb(228, 71, 66), rgb(141, 7, 250))
+    border-box; /*3*/
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+}
+.user-btns {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.user-btn-2 {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .userProfile {
+    margin: 2rem 5rem;
+  }
+  h1 {
+    margin: 20px 5px;
+  }
+}

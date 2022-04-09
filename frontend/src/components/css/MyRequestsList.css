@@ -1,0 +1,32 @@
+.petReqTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 5px solid rgb(182, 177, 177);
+  border-radius: 15px;
+  width: 30%;
+  background-color: rgb(190, 197, 202);
+}
+.petReqTile > div {
+  border-bottom: 1px solid gray;
+}
+
+.tile_Image {
+  width: 70px;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.petReqTileDetail {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  .petReqTile {
+    width: 75%;
+  }
+}

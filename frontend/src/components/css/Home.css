@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(235, 222, 229);
+}
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.petCard {
+  width: 18vmax;
+  background-color: rgb(235, 222, 241);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding: 1vmax 2vmax;
+  padding-bottom: 0.5vmax;
+  border: 3px solid rgb(207, 205, 205);
+  border-radius: 15px;
+}
+
+.petCard > img {
+  width: 14vmax;
+  border-radius: 10px;
+}
+
+.petCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.petCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.petCard > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+.petName {
+  color: blueviolet;
+  text-align: center;
+  font-size: 1.7vmax;
+  font-weight: 600;
+}
+
+.petCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .petCard {
+    /* width: 28vmax; */
+    width: 76%;
+    padding: 4vmax;
+  }
+  .petCard > p {
+    font-size: 16px;
+  }
+  .petCard > img {
+    width: 95%;
+    margin: 2%;
+  }
+
+  .petCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .petCard > span {
+    font-size: 23px;
+  }
+
+  .petCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+  .tile-container {
+    width: 95%;
+  }
+}

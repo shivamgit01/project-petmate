@@ -1,0 +1,10 @@
+.petmate-logo {
+  font-family: "Lobster Two";
+  font-size: 35px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 600px) {
+  .petmate-logo {
+    font-size: 27px;
+  }
+}

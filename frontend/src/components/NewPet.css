@@ -1,0 +1,33 @@
+.dashboard {
+  margin: 5rem;
+  text-align: center;
+}
+.newPetContainer div {
+  margin: 10px;
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+#createPetBtn {
+  background-color: rgb(152, 81, 218);
+  color: white;
+}
+#createPetFormImage img {
+  width: 220px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    margin: 6rem 2rem;
+  }
+  #createPetBtn {
+    margin-top: 18px;
+  }
+}
